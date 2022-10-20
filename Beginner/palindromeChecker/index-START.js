@@ -8,6 +8,7 @@ e.g palindromeChecker('racecar') // will return true
 
 function palindromeChecker(text) {
     // Code goes here
+    return text.split('').reverse().join('')===text
 }
 
 

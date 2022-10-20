@@ -6,6 +6,9 @@ e.g vowelsCounter('anehizxcv') // will return 3
 
 function vowelsCounter(text) {
     // Code goes here
+    let vowels=['a','e','i','o','u']
+
+    return text.toLowerCase().split('').filter(el=>vowels.includes(el)).length
 }
 
 

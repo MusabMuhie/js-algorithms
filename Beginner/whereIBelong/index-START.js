@@ -11,7 +11,13 @@ than 1(index 0), but less than 2(index 1).
 
 function whereIBelong(arr, num) {
    // Code goes here
-
+   let res=0
+   arr.sort((a,b)=>a-b).forEach((el,index)=> {
+      if(el>num && num<arr[index+1]){
+         res=index-1
+      }
+   });
+   return res
 }
 
 
